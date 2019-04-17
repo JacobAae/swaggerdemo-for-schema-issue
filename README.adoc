@@ -15,3 +15,13 @@ See the generated swagger documentation:
 Expected the property name  `petName` should have been `pet_name` due to the `@Schema( name = "pet_name")` annotation
 on the `Pet` class.
 
+== Usage
+
+Post a pet:
+
+  curl -v -X POST -H "Content-Type: application/json" localhost:8080/pet/ -d '{ "pet_name":"Swagger Bug"}'
+
+See generated swagger yml
+
+ curl localhost:8080/api-docs/swagger/swaggerdemo-0.0.yml
+
