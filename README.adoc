@@ -1,0 +1,17 @@
+= README
+
+Example of possible swagger/openapi documentation
+
+Reproducing it:
+
+Run the application:
+
+ ./gradlew run
+
+See the generated swagger documentation:
+
+ curl localhost:8080/api-docs/swagger/swaggerdemo-0.0.yml
+
+Expected the property name  `petName` should have been `pet_name` due to the `@Schema( name = "pet_name")` annotation
+on the `Pet` class.
+
